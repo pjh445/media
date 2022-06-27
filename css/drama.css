@@ -1,0 +1,68 @@
+@charset "utf-8";
+
+* {margin:0; padding:0; box-sizing:border-box;}
+html {scroll-behavior:smooth;}
+html,body {background:white; font:10pt "나눔고딕";}
+img {max-width:100%; display:block;}
+
+body {max-width:600px; margin:auto;}
+#layout {width:100%; margin:auto; position:relative; margin-bottom:50px;}
+
+#iftop {width:100%; border:none; position:absolute; margin:0; height:50pt; overflow:hidden; top:0; left:0;}
+#ifbottom {width:100%; border:none; position:absolute; margin:0; bottom:0; left:0; height:50px;}
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 1,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 48
+}
+
+
+header {max-width:600px; width:100%; position:fixed; background:rgba(0,0,0,0.2);}
+header button {background:none; border:none; color:white; font-size:1.3rem; font-weight:bold;}
+header div {display:flex;  justify-content:space-around;  font-weight:bold; margin:20px 10px 0 30px; padding-bottom:20px; color:white;}
+
+#top {background:black; justify-content:space-around;}
+#top h3 {color:white; text-align:center; margin-bottom:15px;}
+#top img {width:100%;}
+
+
+
+#top div div {display:flex; justify-content:space-between; padding-bottom:20px; margin:0 100px; }
+#gu {color:white; font-size:1rem;}
+#gu rt {background:black; color:white; border:none; border-radius:5px; font-size:1.5rem;}
+#gu .active {display:none;}
+
+
+#topbutton {background:none; color:white; align-self:center; border:none; }
+#topbutton ruby {font-size:1rem;}
+#topbutton rt {font-size:1.5rem;}
+
+
+/*요일*/
+#days {text-align:center; margin:10px; }
+#days h2 {display:none;}
+#days button {font-size:2rem; border:none; background:red; color:white; padding:5px; border-radius:10px;}
+#days button.active {font-size:2rem; border:none; background:none; color:black; padding:5px;}
+
+/*요일별 편성표*/
+#table > div {margin-bottom:70px;}
+#table >div >div {width:90%; height:100px; border:1px solid black; margin:20px; display:flex;}
+#table div div div { flex:1;}
+#table p { font-size:1.5rem; padding:10px 10px 5px 10px;}
+#table button {margin-left:10px; border:1px solid black; border-radius:10px; background:none;font-size:1.5rem; width:100px;}
+#table div div img {height:100%; }
+
+/*#table {display: none;}*/
+#table .active {display:none;}
+#table h2{display:none;}
+
+
+
+
+footer {max-width:600px; position:fixed; display:flex; border-top:1px solid white; background:black; bottom:0; width:100%; height:50px; }
+footer div {width:20%; display:flex; justify-content:center; align-items:center; }
+footer a {color:white; text-decoration:none;}
+footer div:not(:first-child) {border-left:1px solid white;}

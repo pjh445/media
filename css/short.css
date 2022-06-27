@@ -1,0 +1,56 @@
+@charset "utf-8";
+
+* {margin:0; padding:0; box-sizing:border-box;}
+html,body {background:white; font:10pt "나눔고딕";}
+img {max-width:100%; display:block;}
+a	{text-decoration:none; color:white;}
+
+body {max-width:600px; margin:auto;}
+#layout {max-width:600px; margin:auto; position:relative; margin-bottom:50px;}
+
+#iftop {width:100%; border:none; position:absolute; margin:0; height:50pt; overflow:hidden; top:0; left:0;}
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 1,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 48
+}
+
+header {max-width:600px; width:100%; position:fixed;}
+header button {background:none; border:none; font-size:1.3rem; color:white; font-weight:bold;}
+header div {display:flex;  justify-content:space-around;  font-weight:bold; margin:20px 10px 0 30px; padding-bottom:20px; color:white;}
+
+h2 {display:none;}
+
+/*우측메뉴*/
+#menu {position:fixed; bottom:60px; right:0; color:white;  background:black; z-index:111;}
+#menu button {padding:10px; font-size:2rem; background:none; border:none; color:white;}
+#menu a {padding:10px; font-size:2rem; background:none; border:none; color:white;}
+
+/*···누르면 나오는 하단메뉴*/
+#menubar1	{ height:0; position:fixed; width:100%; bottom:0px;  padding-bottom:50px; background:white; z-index:2; display:flex; flex-wrap: wrap; justify-content:space-around;}
+#menubar1 h2 {display:none;}
+#menubar1 a {color:black; font-weight:bold; text-align:center; display:inline-block;  margin:5px;}
+#menubar1 img {width:25vw; padding:20px;}
+
+#menubar2 {width:100%; background:white; position:fixed; bottom:0px; z-index:1; height:0;}
+#menubar2 p {font-weight:bold; font-size:1.5rem; padding:10px; }
+#menubar2 span {transform:translateY(5px); margin-right:5px;}
+
+
+#gb {position:fixed; bottom:0px; z-index:1; width:100%; height:100vh; display:none; background:rgba(0,0,0,0.3);}
+/*쇼츠동영상*/
+#short img {width:100%; height:calc(100vh - 50px);}
+#short p img {width:20px; height:20px; display:inline-block; transform:translateY(3px); margin-right:5px;}
+#short p {position:absolute; color:white; font-size:1.5rem; transform:translateY(-62px); padding:5px 0 10px 10px; width:100%; background:rgba(0,0,0,0.2);}
+#short iframe {width:100%; height:calc(100vh - 50px); border:none; z-index:0; position:relative;}
+
+
+
+
+footer {max-width:600px; position:fixed; display:flex; border-top:1px solid white; background:black; bottom:0; width:100%; height:50px; z-index:2;}
+footer div {width:20%; display:flex; justify-content:center; align-items:center; }
+footer a {color:white; text-decoration:none;}
+footer div:not(:first-child) {border-left:1px solid white;}
